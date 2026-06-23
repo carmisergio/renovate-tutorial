@@ -4,5 +4,10 @@
     "config:recommended",
     ":semanticCommits",
     ":semanticCommitTypeAll(chore)"
-  ]
+  ],
+  "packageRules": [{
+    "matchUpdateTypes": ["patch"],
+    "matchCurrentVersion": "!/^0/",
+    "automerge": true  
+  }]
 }
